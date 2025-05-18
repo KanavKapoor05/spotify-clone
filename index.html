@@ -17,14 +17,15 @@
     <div class="playlist">
       <h1 class = "playlist-title">Best of NCS - No Copyright Sounds</h1>
       <ul class="song-list">
-        <li class="song">
-          <img src="s1.jpeg" alt="NCS" />
-          <div class="song-info">
-          <span>On & On - Cartoon, Daniel Levi</span>
-          <span class = "song-duration">02:50</span>
-          </div>
-           <button id="play">▶️</button>
-        </li>
+        <li class="song" data-file="1.mp3" data-name="On & On - Cartoon, Daniel Levi">
+             <img src="s1.jpeg" alt="NCS" />
+              <div class="song-info">
+              <span>On & On - Cartoon, Daniel Levi</span>
+              <span class="song-duration">02:50</span>
+         </div>
+     <button id = "play">▶️</button>
+</li>
+
        
         <li class="song">
           <img src="s2.jpg" alt="NCS" />
@@ -112,14 +113,15 @@
   </main>
 
   <footer class="player">
+  <audio id="audio-player" src=""></audio>
   <div class="progress-bar">
     <input type="range" value="0" id="progress" />
   </div>
   <div class="player-bottom">
-    <div class="info">On & On - Cartoon, Daniel Levi</div>
+    <div class="info" id="current-song-name">Select a song</div>
     <div class="controls">
       <button id="prev">⏮️</button>
-      <button id="play">▶️</button>
+      <button id="main-play">▶️</button>
       <button id="next">⏭️</button>
     </div>
   </div>
